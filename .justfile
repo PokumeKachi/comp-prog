@@ -5,7 +5,7 @@ LAST_EDITED := `find . -type f \( -name '*.c' -o -name '*.cpp' \) -printf '%T@ %
 
 run:
     @echo Compiling {{LAST_EDITED}}...
-    @gcc {{LAST_EDITED}}
+    @g++ {{LAST_EDITED}}
     @echo Running {{LAST_EDITED}}...
     @exec ./a.out
 
