@@ -17,3 +17,6 @@ run:
 
 git:
     gitui
+
+compile-commands-gen:
+    bear -- just run

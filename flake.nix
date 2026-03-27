@@ -14,9 +14,10 @@
                     libs = with pkgs; [
                     ];
                     tools = with pkgs; [
-                        clang
+                        clang-tools
                         rustc
                         zig
+                        bear
                     ];
                     common = {
                         buildInputs = libs;
