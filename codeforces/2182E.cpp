@@ -2,25 +2,23 @@
 #include <iostream>
 #include <string>
 
-int t, x, n;
 
 int main() {
     std::ios_base::sync_with_stdio(0);
     std::cin.tie(nullptr);
+
+    int t;
 
     std::cin >> t;
 
     std::string res = "";
 
     while (t--) {
-        std::cin >> x >> n;
+        int n, m, k;
+        std::cin >> n >> m >> k;
 
-        res += ' ';
+        for (int i = 0; i < m; ++i) {
 
-        if (n % 2) {
-            res += std::to_string(x);
-        } else {
-            res += '0';
         }
 
         res += '\n';

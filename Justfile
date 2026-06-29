@@ -1,9 +1,8 @@
 _default:
     @just --choose
 
-# Lazy variable – recomputed each time it’s used
 LAST_EDITED:=`find . -type f \( -name '*.c' -o -name '*.cpp' -o -name '*.rs' -o -name '*.zig' \) -printf '%T@ %p\n' | sort -nr | head -n1 | cut -d' ' -f2-`
-FINISH_MESSAGE:="Compilcation finished, now running..."
+FINISH_MESSAGE:="Compilation finished, now running..."
 
 run:
     @echo Compiling {{LAST_EDITED}}...
@@ -15,8 +14,8 @@ run:
         *) echo "Unsupported file type" && exit 1 ;; \
     esac
 
+edit-last:
+    nvim "{{LAST_EDITED}}"
+
 git:
     gitui
-
-compile-commands-gen:
-    bear -- just run

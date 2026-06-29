@@ -1,0 +1,13 @@
+[
+  {
+    "file": "./codeforces/4A.cpp",
+    "arguments": [
+      "clang++",
+      "./codeforces/4A.cpp",
+      "-o",
+      "out"
+    ],
+    "directory": "/home/kachi/projects/comp-prog",
+    "output": "out"
+  }
+]

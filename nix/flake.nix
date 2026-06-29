@@ -1,6 +1,6 @@
 {
     description = "description";
-    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
     outputs =
         { self, nixpkgs }:
         let
@@ -64,8 +64,6 @@
                             shellHook = ''
                                 export SHELL=${ps.pkgs.bashInteractive}/bin/bash
                                 export LD_LIBRARY_PATH=${ps.pkgs.lib.makeLibraryPath ps.libs}:$LD_LIBRARY_PATH
-
-                                alias n='just new'
                             '';
                         }
                     );
