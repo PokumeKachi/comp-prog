@@ -14,7 +14,7 @@
                     libs = with pkgs; [
                     ];
                     tools = with pkgs; [
-                        clang-tools
+                        gcc
                         rustc
                         zig
                         bear
