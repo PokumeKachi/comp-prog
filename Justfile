@@ -10,7 +10,7 @@ run:
         *.rs) rustc {{LAST_EDITED}} -o out && echo {{FINISH_MESSAGE}} && ./out ;; \
         *.zig) zig build-exe {{LAST_EDITED}} -femit-bin=./out && echo {{FINISH_MESSAGE}} && ./out ;; \
         *.c) gcc {{LAST_EDITED}} -o out && echo {{FINISH_MESSAGE}} && ./out ;; \
-        *.cpp) g++ {{LAST_EDITED}} -o out && echo {{FINISH_MESSAGE}} && ./out ;; \
+        *.cpp) g++ -std=c++23 {{LAST_EDITED}} -o out && echo {{FINISH_MESSAGE}} && ./out ;; \
         *) echo "Unsupported file type" && exit 1 ;; \
     esac
 
