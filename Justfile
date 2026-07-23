@@ -15,7 +15,7 @@ run:
     esac
 
 edit-last:
-    nvim "{{LAST_EDITED}}"
+    ${EDITOR:-vi} "{{LAST_EDITED}}"
 
 git:
     gitui
