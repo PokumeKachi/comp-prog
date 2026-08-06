@@ -60,7 +60,7 @@ int main() {
         long long lastElement = -1;
 
         for (long long i = 1; i < freq.size(); ++i) {
-            if (freq[i].first % freq[i - 1].second) {
+            if ((freq[i].first - freq[i - 1].first) % freq[i - 1].second) {
                 res += "-1";
                 goto exit;
             }
