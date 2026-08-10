@@ -13,6 +13,8 @@ run:
         *.cpp) g++ -std=c++23 {{LAST_EDITED}} -o out && echo {{FINISH_MESSAGE}} && ./out ;; \
         *) echo "Unsupported file type" && exit 1 ;; \
     esac
+    @echo "Finished running!"
+    @read
 
 edit-last:
     ${EDITOR:-vi} "{{LAST_EDITED}}"
