@@ -17,10 +17,13 @@ int main() {
 
     int l, r;
 
+    string res;
+
     for (int i = 0 ; i < m; ++i) {
         cin >> l >> r;
     }
 
+    cout << res;
 
     return 0;
 }
