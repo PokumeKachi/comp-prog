@@ -16,6 +16,7 @@ run:
     esac
     @echo "Compilation finished, now running..."
     @./out
+    @echo
     @echo "Finished running!"
     @read
 
